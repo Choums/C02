@@ -6,7 +6,7 @@
 /*   By: caidel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 18:08:37 by caidel            #+#    #+#             */
-/*   Updated: 2020/07/07 12:59:02 by caidel           ###   ########.fr       */
+/*   Updated: 2020/07/07 20:56:49 by caidel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,12 @@ char	*ft_strcapitalize(char *str)
 		i++;
 	}
 	return (str);
+}
+
+int main()
+{
+	char s1[] = " ";
+	printf("%s", ft_strcapitalize(s1));
+	
+	return 0;
 }

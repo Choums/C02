@@ -6,13 +6,13 @@
 /*   By: caidel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 12:12:40 by caidel            #+#    #+#             */
-/*   Updated: 2020/07/05 13:36:00 by caidel           ###   ########.fr       */
+/*   Updated: 2020/07/08 13:40:53 by caidel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	while (src[i] && i != n)

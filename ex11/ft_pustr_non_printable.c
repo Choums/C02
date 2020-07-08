@@ -6,7 +6,7 @@
 /*   By: caidel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/06 14:35:11 by caidel            #+#    #+#             */
-/*   Updated: 2020/07/07 12:44:53 by caidel           ###   ########.fr       */
+/*   Updated: 2020/07/08 14:42:41 by caidel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putchar(char c)
 void	ft_hexa(char c)
 {
 	char *hexa;
-	char h;
+	int h;
 
 	h = 0;
 	hexa = "0123456789abcdef";
@@ -33,7 +33,6 @@ void	ft_hexa(char c)
 void	ft_putstr_non_printable(char *str)
 {
 	int i;
-	int h;
 
 	i = 0;
 	while (str[i])
@@ -49,4 +48,13 @@ void	ft_putstr_non_printable(char *str)
 		}
 		i++;
 	}
+}
+
+#include <stdio.h>
+
+int main()
+{
+	char s1[] = "sdfn\ns nsi\ts";
+	ft_putstr_non_printable(s1);
+	return 0;
 }
