@@ -6,7 +6,7 @@
 /*   By: caidel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/05 15:42:35 by caidel            #+#    #+#             */
-/*   Updated: 2020/07/05 16:53:51 by caidel           ###   ########.fr       */
+/*   Updated: 2020/07/08 16:40:11 by caidel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_str_is_uppercase(char *str)
 		return (1);
 	while (str[i])
 	{
-		if ((str[i] < 65 || str[i] > 90))
+		if ((str[i] < 'A') || (str[i] > 'Z'))
 			return (0);
 		i++;
 	}
